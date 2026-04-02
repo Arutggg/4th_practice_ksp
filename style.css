@@ -1,0 +1,205 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+h2 {
+    color: navy;
+}
+
+h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: silver;
+    padding: 5px 10px;
+}
+
+small {
+    color: green;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    display: block;
+    margin-top: 5px;
+}
+
+main p {
+    color: darkblue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: darkblue;
+}
+
+ul li::before {
+    content: "☕";
+    margin-right: 8px;
+    color: purple;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+footer hr {
+    border: 1px solid gray;
+}
+
+main img {
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.catalog-item {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Стили для фильтров */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.filter-btn:hover {
+    background-color: darkblue;
+}
+
+/* Стили для кнопок добавления */
+.add-to-cart {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.add-to-cart:hover {
+    background-color: darkgreen;
+}
+
+/* Стили для корзины */
+.cart {
+    background-color: white;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cart-item {
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+}
+
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}
+
+#clear-cart-btn, #checkout-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#checkout-btn {
+    background-color: green;
+}
+
+#clear-cart-btn:hover {
+    background-color: darkorange;
+}
+
+#checkout-btn:hover {
+    background-color: darkgreen;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}

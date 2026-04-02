@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир кофе - Каталог</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Мир кофе</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Каталог</h2>
+        
+        <div class="filters">
+            <h3>Фильтр по категориям:</h3>
+            <button class="filter-btn" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="зерновой">Зерновой</button>
+            <button class="filter-btn" data-filter="молотый">Молотый</button>
+            <button class="filter-btn" data-filter="капсульный">Капсульный</button>
+        </div>
+        
+        <hr>
+        
+        <div class="catalog-item" data-category="зерновой" data-id="1">
+            <h3>Кофе в зернах "Эфиопия Сидамо"</h3>
+            <img src="images/sidamo-dark-1kg-700.jpg" alt="Кофе в зернах Эфиопия" width="200" height="150">
+            <p class="price">Цена: 890 руб.</p>
+            <br>
+            <a href="pages/item1.html">Подробнее о товаре</a>
+            <button class="add-to-cart" data-id="1">Добавить в корзину</button>
+        </div>
+        
+        <div class="catalog-item" data-category="молотый" data-id="2">
+            <h3>Молотый кофе "Колумбия Супремо"</h3>
+            <img src="images/colombia-supremo-200g-ground.jpg" alt="Молотый кофе Колумбия" width="200" height="150">
+            <p class="price">Цена: 650 руб.</p>
+            <br>
+            <a href="pages/item2.html">Подробнее о товаре</a>
+            <button class="add-to-cart" data-id="2">Добавить в корзину</button>
+        </div>
+
+        <div class="catalog-item" data-category="капсульный" data-id="3">
+            <h3>Кофе в капсулах "Итальянский бленд"</h3>
+            <img src="images/images.jpeg" alt="Кофе в капсулах" width="200" height="150">
+            <p class="price">Цена: 1200 руб.</p>
+            <br>
+            <a href="pages/item3.html">Подробнее о товаре</a>
+            <button class="add-to-cart" data-id="3">Добавить в корзину</button>
+        </div>
+        
+        <hr>
+        
+        <div class="cart">
+            <h3>Корзина <span id="cart-count">0</span></h3>
+            <div id="cart-items">
+                <p>Корзина пуста</p>
+            </div>
+            <p>Итого: <span id="cart-total">0</span> руб.</p>
+            <button id="clear-cart-btn">Очистить корзину</button>
+            <button id="checkout-btn">Оплатить</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; Made by Arut</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
