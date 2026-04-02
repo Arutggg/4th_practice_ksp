@@ -23,7 +23,7 @@ const products = [
 ];
 
 
-// Загрузка корзины из LocalStorage при старте
+// Загрузка корзины из LocalStorage при старте!!
 const savedCart = localStorage.getItem("cart");
 let cart = savedCart ? JSON.parse(savedCart) : [];
 
